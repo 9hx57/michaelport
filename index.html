@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael Kiplangat — Junior Developer & Cyber Security Aspirant</title>
+  <meta name="description" content="Portfolio of Michael Kiplangat — Junior Developer, Graphic Designer, CS Graduate, and Cyber Security enthusiast. Seeking experience and real connections." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Bebas+Neue&family=Source+Code+Pro:wght@300;400;600&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div id="cursor-glow"></div>
+  <div id="cursor-dot"></div>
+
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>MK<span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#hero"     class="nav-link">HOME</a></li>
+        <li><a href="#about"    class="nav-link">ABOUT</a></li>
+        <li><a href="#skills"   class="nav-link">SKILLS</a></li>
+        <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+        <li><a href="#resume"   class="nav-link">RESUME</a></li>
+        <li><a href="#contact"  class="nav-link">CONTACT</a></li>
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+          <span class="toggle-icon">◐</span>
+          <span class="toggle-label">DARK</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#hero"     class="mobile-link">HOME</a></li>
+      <li><a href="#about"    class="mobile-link">ABOUT</a></li>
+      <li><a href="#skills"   class="mobile-link">SKILLS</a></li>
+      <li><a href="#projects" class="mobile-link">PROJECTS</a></li>
+      <li><a href="#resume"   class="mobile-link">RESUME</a></li>
+      <li><a href="#contact"  class="mobile-link">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <section id="hero">
+    <canvas id="grid-canvas"></canvas>
+    <div class="grain-overlay"></div>
+
+    <div class="hero-content">
+      <div class="level-badge" id="level-badge">
+        <span class="badge-icon">⬡</span>
+        <span class="badge-text">LEVEL 01 DEVELOPER — FRESH SPAWN</span>
+        <span class="badge-xp">XP: 340 / 1,000</span>
+      </div>
+
+      <div class="hero-greeting">HELLO, WORLD. I AM</div>
+      <h1 class="hero-name">
+        <span class="name-part">MICHAEL</span>
+        <span class="name-part accent">KIPLANGAT</span>
+      </h1>
+      <div class="hero-roles">
+        <span class="role-prefix">&gt;&gt;</span>
+        <span id="typed-role"></span>
+        <span class="cursor-blink">_</span>
+      </div>
+
+      <p class="hero-tagline">
+        Fresh CS graduate. Chasing <span class="highlight">cyber security</span>. Building things with code.
+        Looking for <span class="highlight">experience &amp; real connections</span>.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary magnetic">
+          <span>SEE MY WORK</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#contact" class="btn btn-outline magnetic">
+          <span>LET'S CONNECT</span>
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">MOS SINCE GRAD</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">PROJECTS</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">LANGUAGES</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100">0</span>
+          <span class="stat-label">% MOTIVATED</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL TO EXPLORE</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 class="section-title">ABOUT ME</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+
+  <div class="about-photo-wrap">
+    <div class="about-photo-frame">
+      <img src="ME.jpeg" alt="Michael Kiplangat" class="about-photo" />
+      <div class="photo-scan-line"></div>
+      <div class="photo-corner tl"></div>
+      <div class="photo-corner tr"></div>
+      <div class="photo-corner bl"></div>
+      <div class="photo-corner br"></div>
+    </div>
+    <div class="photo-label">
+      <span>MK_PROFILE.jpg</span>
+      <span class="photo-status">● ONLINE</span>
+    </div>
+  </div>
+
+      <div class="terminal-card" id="terminal">
+        <div class="terminal-bar">
+          <span class="t-dot red"></span>
+          <span class="t-dot yellow"></span>
+          <span class="t-dot green"></span>
+          <span class="t-title">michael@portfolio:~</span>
+        </div>
+        <div class="terminal-body" id="terminal-body"></div>
+      </div>
+
+      <div class="about-text">
+        <div class="achievement-badge unlocked">
+          <span class="ach-icon">🎓</span>
+          <div>
+            <span class="ach-title">QUEST STARTED: CAREER UNLOCKED</span>
+            <span class="ach-sub">Achievement: CS Graduate — 3 Months Into The Real World</span>
+          </div>
+        </div>
+
+        <p class="about-story">
+          I'm Michael Kiplangat — a Computer Science graduate who finished his degree just three months ago
+          and is now sprinting into the real world. I'm honest about where I stand: junior, still learning,
+          still building — and completely okay with that. Every expert was once a beginner.
+        </p>
+        <p class="about-story">
+          My path is pointing toward <strong>cyber security</strong>. The idea of understanding how systems 
+          break, thinking like an adversary, and protecting what matters — that fires me up. I'm pairing that 
+          ambition with what I already bring: <strong>web development</strong>, <strong>graphic design</strong>, 
+          solid <strong>computer hardware knowledge</strong>, and a mind that genuinely loves logic and reasoning.
+        </p>
+        <p class="about-story">
+          When I'm not in the terminal, you'll find me gaming, thinking through philosophy, or doing creative 
+          work. I believe curiosity and creativity aren't opposites of technical discipline — they make it sharper.
+          Above all, I'm here for the <em>connections</em>. Let's build something together.
+        </p>
+
+        <blockquote class="philosophy">
+          <span class="quote-mark">"</span>
+          The unexamined code is not worth shipping. Question assumptions, stress-test your logic,
+          and never stop asking <em>why</em>.
+          <span class="quote-mark">"</span>
+        </blockquote>
+
+        <div class="about-tags">
+          <span class="tag">🔐 Cyber Security Aspirant</span>
+          <span class="tag">🎮 Gamer</span>
+          <span class="tag">🧠 Philosopher</span>
+          <span class="tag">🖥️ Hardware Nerd</span>
+          <span class="tag">🎨 Graphic Designer</span>
+          <span class="tag">💡 Logic Lover</span>
+          <span class="tag">☕ Coffee Funded</span>
+          <span class="tag">📡 Seeking Connections</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 class="section-title">SKILL TREE</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="section-sub">Watch them fill on scroll.</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="cat-icon">⟨/⟩</span>
+          <span class="cat-title">PROGRAMMING</span>
+          <span class="cat-level">LVL 05</span>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-meta"><span>HTML &amp; CSS</span><span class="skill-xp">65 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Python</span><span class="skill-xp">58 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="58"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>JavaScript</span><span class="skill-xp">50 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="50"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Java</span><span class="skill-xp">45 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="45"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="cat-icon">🔐</span>
+          <span class="cat-title">CYBER SECURITY</span>
+          <span class="cat-level">LVL 02 — IN TRAINING</span>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-meta"><span>Networking Fundamentals</span><span class="skill-xp">50 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="50"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Linux &amp; Command Line</span><span class="skill-xp">48 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="48"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Security Concepts (CIA, Threats)</span><span class="skill-xp">42 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="42"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>CTF / Ethical Hacking — Learning</span><span class="skill-xp">20 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="20"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="cat-icon">✦</span>
+          <span class="cat-title">GRAPHIC DESIGN</span>
+          <span class="cat-level">LVL 06</span>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-meta"><span>Visual Composition &amp; Layout</span><span class="skill-xp">70 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Typography &amp; Branding</span><span class="skill-xp">65 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Colour Theory &amp; Aesthetics</span><span class="skill-xp">68 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="68"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Digital Tools (Canva / PS basics)</span><span class="skill-xp">60 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="60"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="category-header">
+          <span class="cat-icon">🖥️</span>
+          <span class="cat-title">HARDWARE &amp; SYSTEMS</span>
+          <span class="cat-level">LVL 07</span>
+        </div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-meta"><span>PC Building &amp; Component Selection</span><span class="skill-xp">82 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="82"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Troubleshooting &amp; Diagnosis</span><span class="skill-xp">78 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>OS Installation &amp; Configuration</span><span class="skill-xp">74 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="74"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-meta"><span>Performance Optimisation</span><span class="skill-xp">70 XP</span></div>
+            <div class="xp-bar"><div class="xp-fill" data-fill="70"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="overall-xp">
+      <span class="oxp-label">OVERALL CAREER LEVEL PROGRESS — THE GRIND HAS STARTED</span>
+      <div class="oxp-bar-wrap">
+        <div class="oxp-bar">
+          <div class="oxp-fill" data-fill="34"></div>
+        </div>
+        <span class="oxp-num">34%</span>
+      </div>
+      <span class="oxp-sub">340 / 1,000 XP — Every project, every line of code, every connection moves this bar.</span>
+    </div>
+     <!-- CERTIFICATIONS -->
+    <div class="certs-section">
+      <div class="certs-header">
+        <span class="cert-icon">🏅</span>
+        <span class="certs-title">CERTIFICATIONS</span>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card">
+          <div class="cert-logo">CISCO</div>
+          <div class="cert-body">
+            <h4 class="cert-name">CCNA 1 — Introduction to Networks</h4>
+            <span class="cert-issuer">Issued by Cisco Systems</span>
+            <p class="cert-desc">
+              Covers networking fundamentals, Ethernet concepts, IPv4 and IPv6 
+              addressing, network layer protocols, and basic router and switch 
+              configuration.
+            </p>
+            <div class="cert-tags">
+              <span>Network Fundamentals</span>
+              <span>IPv4 / IPv6</span>
+              <span>Ethernet</span>
+              <span>Routing Basics</span>
+              <span>Cisco IOS</span>
+            </div>
+          </div>
+          <a href="CCNA-_Introduction_to_Networks_certificate_kipkoechmichael727-gmail-com_2ca058a8-be31-4491-81df-043abdcd9b9c.pdf" download class="cert-download">
+            ⬇ DOWNLOAD
+          </a>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-logo">CISCO</div>
+          <div class="cert-body">
+            <h4 class="cert-name">CCNA 2 — Switching, Routing & Wireless Essentials</h4>
+            <span class="cert-issuer">Issued by Cisco Systems</span>
+            <p class="cert-desc">
+              Covers VLANs, inter-VLAN routing, STP, EtherChannel, DHCPv4, 
+              SLAAC, LAN security, and wireless LAN concepts and configuration.
+            </p>
+            <div class="cert-tags">
+              <span>VLANs</span>
+              <span>STP</span>
+              <span>Wireless LAN</span>
+              <span>Inter-VLAN Routing</span>
+              <span>LAN Security</span>
+            </div>
+          </div>
+          <a href="CCNA-_Switching-_Routing-_and_Wireless_Essentials_certificate_kipkoechmichael727-gmail-com_819fb227-b000-412b-9123-fd98c2e1a080.pdf" download class="cert-download">
+            ⬇ DOWNLOAD
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <!-- END CERTIFICATIONS -->
+  </section>
+
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 class="section-title">PROJECTS UNLOCKED</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="achievement-badge unlocked center-badge">
+      <span class="ach-icon">🔓</span>
+      <div>
+        <span class="ach-title">3 PROJECTS LIVE — MORE INCOMING</span>
+        <span class="ach-sub">Achievement: First Steps — The journey of 1,000 commits starts with one push.</span>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card" data-project="0">
+        <div class="project-inner">
+          <div class="project-tag">FEATURED</div>
+          <div class="project-num">001</div>
+          <h3 class="project-title">THIS PORTFOLIO</h3>
+          <p class="project-desc">
+            Designed and coded from scratch — retro-cyber aesthetic, animated canvas grid, custom cursor,
+            dark/light mode, gamified XP bars, and full mobile responsiveness. No frameworks. Just raw HTML, CSS and JS.
+          </p>
+          <div class="project-stack">
+            <span>HTML5</span><span>CSS3</span><span>Vanilla JS</span><span>Design</span>
+          </div>
+          <div class="project-footer">
+            <span class="proj-link" style="cursor:default; opacity:0.5;">YOU'RE ON IT</span>
+            <a href="https://github.com/YOUR_GITHUB_HERE" target="_blank" rel="noopener" class="proj-link">GITHUB →</a>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card" data-project="1">
+        <div class="project-inner">
+          <div class="project-num">002</div>
+          <h3 class="project-title">PYTHON TASK CLI</h3>
+          <p class="project-desc">
+            A command-line task manager built in Python. Add, list, complete, and delete tasks with persistent JSON storage.
+            My first real Python project beyond university coursework — small but functional.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>JSON</span><span>CLI</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/YOUR_GITHUB_HERE" target="_blank" rel="noopener" class="proj-link">GITHUB →</a>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <div class="project-card" data-project="2">
+        <div class="project-inner">
+          <div class="project-tag">DESIGN</div>
+          <div class="project-num">003</div>
+          <h3 class="project-title">BRAND IDENTITY KIT</h3>
+          <p class="project-desc">
+            A graphic design project — logo, colour palette, typography system, and social media assets for a fictional 
+            tech brand. Demonstrates visual thinking, creative direction, and design craft.
+          </p>
+          <div class="project-stack">
+            <span>Graphic Design</span><span>Branding</span><span>Typography</span>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="proj-link">VIEW DESIGN →</a>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+      <!-- Locked / Coming Soon -->
+      <div class="project-card project-locked" data-project="3">
+        <div class="project-inner">
+          <div class="project-tag locked-tag">🔒 IN PROGRESS</div>
+          <div class="project-num">???</div>
+          <h3 class="project-title">SECURITY TOOL — WIP</h3>
+          <p class="project-desc">
+            Currently building a lightweight Python network scanner / port checker as a learning project toward 
+            cyber security. Raw, scrappy, and educational. This is where the journey goes next.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>Networking</span><span>Security</span>
+          </div>
+          <div class="project-footer">
+            <span class="proj-link muted">COMING SOON...</span>
+          </div>
+        </div>
+        <div class="project-glow"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 class="section-title">WHAT I OFFER</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <p class="section-sub">Junior rates. Senior enthusiasm. Zero ego. Ready to work.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">⟨/⟩</div>
+        <h3>Web Development</h3>
+        <p>Static sites, landing pages, and simple web apps using HTML, CSS, JavaScript, and Python. Clean, responsive, no unnecessary complexity.</p>
+        <div class="service-badge">AVAILABLE</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✦</div>
+        <h3>Graphic Design</h3>
+        <p>Logos, brand kits, social media graphics, posters, and digital assets. Aesthetic-first, purpose-driven creative work at accessible rates.</p>
+        <div class="service-badge">AVAILABLE</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🖥️</div>
+        <h3>PC &amp; Hardware Support</h3>
+        <p>PC builds, troubleshooting, component swaps, OS setup, and performance tuning. I know the hardware, not just the software.</p>
+        <div class="service-badge">AVAILABLE</div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔐</div>
+        <h3>Cyber Security — Learning</h3>
+        <p>Actively studying ethical hacking, network security, and CTF challenges. Open to internships, shadowing, mentorship, and junior security roles.</p>
+        <div class="service-badge">SEEKING MENTOR</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="section-header">
+      <span class="section-num">05</span>
+      <h2 class="section-title">JOURNEY LOG</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="resume-top">
+      <a href="MY CV NEW.pdf" class="btn btn-primary magnetic" id="download-cv" download>
+        <span>⬇ DOWNLOAD RESUME</span>
+        <span class="btn-glow"></span>
+      </a>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot active-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">NOV 2024 — PRESENT</span>
+          <h3 class="timeline-role">Actively Seeking: Experience &amp; Connections</h3>
+          <span class="timeline-company">▸ The Real World. Open to Remote &amp; On-Site</span>
+          <p>
+            Three months out of university and fully committed to levelling up. Building personal projects, studying 
+            cyber security fundamentals, doing freelance design work, and networking with anyone willing to connect. 
+            This is the grind phase and I'm genuinely all in.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 — GRADUATED</span>
+          <h3 class="timeline-role">Computer Science</h3>
+          <span class="timeline-company">▸ ZETECH UNIVERSITY </span>
+          <p>
+            Completed Computer Science course covering software development, algorithms, data structures, 
+            object-oriented programming (Java), networking, databases, and systems. Developed strong problem-solving 
+            foundations and the ability to learn new technologies fast.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">ONGOING — SELF-TAUGHT</span>
+          <h3 class="timeline-role">Graphic Design Practice</h3>
+          <span class="timeline-company">▸ Personal Projects &amp; Creative Work</span>
+          <p>
+            Developed design skills independently, working through branding exercises, logo creation, layout design, 
+            and digital composition. Comfortable with visual identity, typography, and producing clean, intentional creative work.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">ONGOING — SELF-TAUGHT</span>
+          <h3 class="timeline-role">Computer Hardware &amp; Systems</h3>
+          <span class="timeline-company">▸ Personal Interest — Practical Experience</span>
+          <p>
+            Built, repaired, and optimised computers for personal use and for others. Deep understanding of 
+            hardware components, diagnostic processes, OS installation, and system performance tuning. 
+            The physical layer of computing is not a mystery to me.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot target-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">TARGET — 2025 / 2026</span>
+          <h3 class="timeline-role">First Professional Role</h3>
+          <span class="timeline-company">▸ Cyber Security / Development / Creative Tech — Anywhere</span>
+          <p>
+            The objective: land a first role or internship where I can contribute, learn from experienced people, 
+            and grow fast. I offer raw drive, a diverse skill set across code + design + hardware, 
+            and a mindset built on logic, creativity, and genuine curiosity. Let's make it happen.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-header">
+      <span class="section-num">06</span>
+      <h2 class="section-title">LET'S CONNECT</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="contact-intro">
+          I'm not just looking for jobs, I'm looking for <strong>people</strong>. Mentors, collaborators, 
+          fellow builders, gamers who code, philosophers who ship. If you want to talk tech, security, design, 
+          gaming, or anything in between. I'm here for it.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:YOUR_EMAIL_HERE" class="contact-link">
+            <span class="cl-icon">✉</span>
+            <span>kipkoechmichael727@gmail.com</span>
+          </a>
+          <a href="https://github.com/YOUR_GITHUB_HERE" target="_blank" rel="noopener" class="contact-link">
+            <span class="cl-icon">⌥</span>
+            <span>github.com/</span>
+          </a>
+        </div>
+
+        <div class="gaming-links">
+          <span class="gaming-label">🎮 FIND ME ONLINE</span>
+          <div class="gaming-grid">
+
+            <a href="https://steamcommunity.com/profiles/76561199432770544/"
+               target="_blank" rel="noopener" class="gaming-link" title="Steam Profile">
+              <span class="gl-icon">♟</span>
+              <span>Steam</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="availability">
+          <span class="avail-dot"></span>
+          <span>Open to internships, junior roles &amp; collaborations — starting NOW</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="cf-name">YOUR NAME</label>
+          <input type="text" id="cf-name" name="name" placeholder="Who are you?" required autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="cf-email">YOUR EMAIL</label>
+          <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">SUBJECT</label>
+          <input type="text" id="cf-subject" name="subject" placeholder="Job / Mentorship / Collab / Just saying hi" />
+        </div>
+        <div class="form-group">
+          <label for="cf-message">MESSAGE</label>
+          <textarea id="cf-message" name="message" rows="5" placeholder="Talk to me. I actually read every message." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary magnetic full-width">
+          <span id="submit-text">SEND MESSAGE ⟶</span>
+          <span class="btn-glow"></span>
+        </button>
+        <div id="form-feedback" class="form-feedback"></div>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>MK<span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-copy">© 2025 Michael Kiplangat. Built with ☕, curiosity, and a lot of Stack Overflow.</p>
+      <p class="footer-sub">HTML · CSS · Vanilla JS &nbsp;|&nbsp; No frameworks. Just raw intention.</p>
+    </div>
+  </footer>
+
+  <!-- EASTER EGG — Konami Code -->
+  <div id="easter-egg" class="easter-egg hidden">
+    <div class="ee-inner">
+      <div class="ee-icon">🎮</div>
+      <h2 class="ee-title">KONAMI CODE ACTIVATED</h2>
+      <p class="ee-text">A fellow gamer. Respect. Here's your rare achievement:</p>
+      <div class="ee-achievement">
+        <span>🏅</span>
+        <div>
+          <strong>LEET SCOUT UNLOCKED</strong><br/>
+          <small>Only the curious and the players find this screen.</small>
+        </div>
+      </div>
+      <p class="ee-secret">
+        Real talk: I built this at 2am with instant coffee and Henry Mancini playing in the background.
+        If that resonates hit the contact form. Let's connect. 👾
+      </p>
+      <button id="ee-close" class="btn btn-outline">CLOSE &times;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

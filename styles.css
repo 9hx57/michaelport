@@ -1,8 +1,3 @@
-/* ═══════════════════════════════════════════════════════════════
-   MICHAEL KIPLANGAT — PORTFOLIO STYLESHEET
-   Retro-Modern Cyber Theme | Wine Red + Black + White
-   ═══════════════════════════════════════════════════════════════ */
-
 /* ─── CSS VARIABLES ─────────────────────────────────────────── */
 :root {
   --wine:       #7c2d3a;
@@ -1321,7 +1316,7 @@ section {
 }
 /* ─── ABOUT PHOTO ─────────────────────────────────────────────── */
 .about-grid {
-  grid-template-columns: 220px 1fr 1fr; /* photo | terminal | text */
+  grid-template-columns: 220px 1fr 1fr; 
 }
 
 .about-photo-wrap {
@@ -1344,7 +1339,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top; /* keeps your face centered — adjust if needed */
+  object-position: center top;
   display: block;
   filter: grayscale(20%) contrast(1.05);
   transition: filter 0.4s;
@@ -1368,7 +1363,7 @@ section {
   pointer-events: none;
 }
 
-/* Corner brackets — retro targeting reticle look */
+/* Corner brackets*/
 .photo-corner {
   position: absolute;
   width: 14px;

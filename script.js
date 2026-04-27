@@ -1,8 +1,3 @@
-/* ═══════════════════════════════════════════════════════════════
-   MICHAEL KIPLANGAT — PORTFOLIO SCRIPTS
-   Retro-Modern Cyber Theme | Pure Vanilla JS
-   ═══════════════════════════════════════════════════════════════ */
-
 'use strict';
 
 // ─── UTILITY ──────────────────────────────────────────────────────
@@ -395,7 +390,7 @@ const raf = requestAnimationFrame;
     feedback.className = 'form-feedback';
     feedback.textContent = '';
 
-    // Simulated send — in production replace with Netlify Forms or Formspree
+
     setTimeout(() => {
       feedback.className = 'form-feedback success';
       feedback.textContent = '✓ MESSAGE RECEIVED — I\'ll reply within 24h. Thank you!';
@@ -413,7 +408,6 @@ const raf = requestAnimationFrame;
   if (!btn) return;
   // If href is resume.pdf and file doesn't exist yet, show a friendly note
   btn.addEventListener('click', e => {
-    // Remove this handler once you have an actual resume.pdf in the folder
     const href = btn.getAttribute('href');
     if (href === 'resume.pdf') {
       e.preventDefault();
@@ -437,7 +431,6 @@ const raf = requestAnimationFrame;
         document.head.appendChild(s);
       }
     }
-    // If you add a real resume.pdf, the download attribute on the link handles it automatically
   });
 })();
 
